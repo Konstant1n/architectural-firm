@@ -10,6 +10,7 @@ body {
 
 .container {
     max-width: 1024px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -26,10 +27,16 @@ body {
     cursor: pointer;
     font-size: 20px;
     line-height: 24px;
+    color: #005BBB;
+}
+
+.main {
+    padding-bottom: 500px;
 }
 
 .inro-text-block {
     margin: 0 0 80px 0;
+    text-align: left;
 }
 
 .intro-text {
@@ -40,4 +47,123 @@ body {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.title-block {
+    padding: 16px 0 16px;
+    border-top: 1px solid #005BBB;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.title-block::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 50%;
+    background: #005BBB;
+    position: absolute;
+    left: 25%;
+    top: 80px;
+}
+
+.main-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.history-block {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 80px 0;
+}
+
+.history-block__item {
+    background: #005BBB;
+    color: white;
+    max-width: 497px;
+    margin: 0 28px 0 0;
+    min-height: 394px;
+    border-left: 10px solid #FFD500;
+    padding: 60px 40px 40px 30px;
+    font-size: 18px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+}
+
+.history-block__item:last-child {
+    margin-right: 0;
+}
+
+.big-data {
+    font-size: 48px;
+}
+
+
+.input-group {
+    position: relative;
+}
+
+.textarea {
+    outline: none;
+    -moz-appearance: none;
+    width: 100%;
+    border: 1px solid #005BBB;
+    resize: none;
+    height: 120px;
+    padding: 47px 259px 47px 30px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #005BBB;
+    opacity: 0.5;
+    overflow: auto;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #005BBB;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #005BBB;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #005BBB;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #005BBB;
+}
+
+.button {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 13px 56px;
+    width: 199px;
+    height: 60px;
+    background: #005BBB;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(100% - 229px);
+    outline: none;
+    -moz-appearance: none;
+    border: none;
+
+
 }
