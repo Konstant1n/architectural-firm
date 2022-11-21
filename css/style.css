@@ -43,8 +43,8 @@ body {
     font-size: 28px;
     line-height: 140%;
     /*Доопрацювати відстані в px */
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 15px;
+    margin-block-end: 15px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
@@ -164,6 +164,7 @@ body {
     outline: none;
     -moz-appearance: none;
     border: none;
+    cursor: pointer;
 
 
 }
