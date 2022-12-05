@@ -5,7 +5,6 @@ body {
 
 .header {
     position: relative;
-    text-align: center;
     padding: 80px 0 0 0;
 }
 
@@ -15,7 +14,9 @@ body {
 }
 
 .logo {
-    margin: 0 0 80px 0;
+    height: 60px;
+    text-align: center;
+    margin: 0 0 80px;
 }
 
 /* .menu {
@@ -24,6 +25,7 @@ body {
 
 .nav {
     margin: 0 0 80px 0;
+    text-align: center;
 }
 
 .nav__link {
@@ -46,12 +48,17 @@ body {
     border: 0;
     background: none;
     padding: 0;
+    cursor: pointer;
 }
 
 /* -----------------------------------SLick Slider------------------------ */
 .gallery {
     max-width: 1352px;
     margin: 0 auto;
+}
+
+.slider {
+    margin-bottom: 80px;    
 }
 
 .slick-track {
@@ -244,7 +251,7 @@ body {
 @media (max-width: 1024px) {
 
     .wrapper {
-        padding-top: 450px;
+        padding-top: 188px;
     }
 
     .container {
@@ -259,17 +266,65 @@ body {
         left: 0;
         padding: 48px 60px 0;
         z-index: 100;
+        margin: 0;
     }
 
-    .top-line {
+    /* .top-line {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
-    }
+    } */
 
     .nav {
         display: none;
+    }
+
+    .logo {
+        text-align: left;
+        margin-bottom: 120px;
+    }
+
+    .btn-burger,
+    .btn-close {
+        display: block;
+        position: absolute;
+        top: 48px;
+        right: 60px;
+    }
+
+    .btn-close {
+        display: none;
+    }
+
+    .menu-open.header {
+        background: #005BBB;
+    }
+
+    .menu-open .logo svg * {
+        fill: #fff;
+    }
+
+    .menu-open .btn-burger {
+        display: none;
+    }
+
+    .menu-open .btn-close {
+        display: block;
+    }
+
+    .menu-open .nav {
+        display: block;
+        text-align: left;
+        padding: 0 0 72px;
+        margin: 0;
+    }
+
+    .menu-open .nav__link {
+        color: #fff;
+        display: block;
+        margin: 0 0 48px;
+        border-bottom: 2px solid #005BBB;
     }
 
 
@@ -277,8 +332,16 @@ body {
         display: block;
     } */
 
+    .slider {
+        padding: 0 50px 0 40px;
+    }
+
     .main-title {
         font-size: 30px;
+    }
+
+    .intro-text {
+        font-size: 24px;
     }
 
     .history-block {
@@ -302,20 +365,49 @@ body {
 
 @media (max-width: 600px) {
     .wrapper {
-        padding-top: 320px;
+        padding-top: 0;
     }
 
     .header {
-        padding: 0;
+        padding: 20px 20px 0;
+    }
+
+    .menu-open.header {
+        position: fixed;
+        min-height: 100vh;
+    }
+
+    .logo {
+        display: none;
+        margin-bottom: 48px;
+    }
+
+    .menu-open .logo {
+        display: block;
+    }
+
+    .logo svg {
+        width: 54px;
+        height: 47px;
+    }
+
+    .btn-burger,
+    .btn-close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .btn-burger svg * {
+        fill: #fff;
     }
 
     .container {
         margin: 0 20px;
     }
 
-    .top-line {
+    /* .top-line {
         display: none;
-    }
+    } */
 
     .intro-text {
         font-size: 16px;
@@ -372,6 +464,10 @@ body {
         margin: 0 auto;
     }
 
+    .slider {
+        padding: 0;
+        margin: 0 0 48px 0;
+    }
 
     .slick-slide {
         border: 0;
