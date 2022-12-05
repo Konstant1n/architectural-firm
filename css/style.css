@@ -244,7 +244,7 @@ body {
 @media (max-width: 1024px) {
 
     .wrapper {
-        padding-top: 188px;
+        padding-top: 450px;
     }
 
     .container {
@@ -302,7 +302,7 @@ body {
 
 @media (max-width: 600px) {
     .wrapper {
-        padding-top: 0px;
+        padding-top: 320px;
     }
 
     .header {
