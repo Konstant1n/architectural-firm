@@ -19,10 +19,6 @@ body {
     margin: 0 0 80px;
 }
 
-/* .menu {
-    display: none;
-} */
-
 .nav {
     margin: 0 0 80px 0;
     text-align: center;
@@ -269,13 +265,6 @@ body {
         margin: 0;
     }
 
-    /* .top-line {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-    } */
-
     .nav {
         display: none;
     }
@@ -328,10 +317,6 @@ body {
     }
 
 
-    /* .menu {
-        display: block;
-    } */
-
     .slider {
         padding: 0 50px 0 40px;
     }
@@ -356,7 +341,6 @@ body {
     }
 
     .gallery {
-        /* margin: 0 -20px; */
     }
 
 
@@ -404,10 +388,6 @@ body {
     .container {
         margin: 0 20px;
     }
-
-    /* .top-line {
-        display: none;
-    } */
 
     .intro-text {
         font-size: 16px;
